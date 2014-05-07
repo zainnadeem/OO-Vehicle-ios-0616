@@ -21,29 +21,60 @@ describe(@"FISVehicle", ^{
         vehicle = [[FISVehicle alloc] init];
     });
     
+//    properties
     it(@"is an FISVehicle", ^{
         expect(vehicle).toNot.beNil();
-        expect(vehicle).to.beKindOf([FISVehicle class]);
+        expect(vehicle).to.beInstanceOf([FISVehicle class]);
     });
     
     it(@"has a weight", ^{
         expect(vehicle).to.respondTo(@selector(weight));
+        expect(vehicle).to.respondTo(@selector(setWeight:));
     });
     
     it(@"has a top speed", ^{
         expect(vehicle).to.respondTo(@selector(topSpeed));
+        expect(vehicle).to.respondTo(@selector(setTopSpeed:));
     });
 
     it(@"has a current speed", ^{
         expect(vehicle).to.respondTo(@selector(currentSpeed));
+        expect(vehicle).to.respondTo(@selector(setCurrentSpeed:));
     });
     
     it(@"has a current direction", ^{
         expect(vehicle).to.respondTo(@selector(currentDirection));
+        expect(vehicle).to.respondTo(@selector(setCurrentDirection:));
     });
 
     it(@"has a distanceFromStartingPoint", ^{
         expect(vehicle).to.respondTo(@selector(distanceFromStartingPoint));
+        expect(vehicle).to.respondTo(@selector(setDistanceFromStartingPoint:));
+    });
+    
+//    methods
+    it(@"can increase speed", ^{
+        expect(vehicle).to.respondTo(@selector(increaseSpeed));
+    });
+    
+    it(@"can brake", ^{
+        expect(vehicle).to.respondTo(@selector(brake));
+    });
+    
+    it(@"can turn left", ^{
+        expect(vehicle).to.respondTo(@selector(turnLeft));
+    });
+    
+    it(@"can turn right", ^{
+        expect(vehicle).to.respondTo(@selector(turnRight));
+    });
+    
+    it(@"can move forward", ^{
+        expect(vehicle).to.respondTo(@selector(moveForward));
+    });
+
+    it(@"can move backward", ^{
+        expect(vehicle).to.respondTo(@selector(moveBackward));
     });
     
     afterEach(^{
