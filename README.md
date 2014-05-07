@@ -1,5 +1,5 @@
 ---
-  tags: oop, beginner, methods, inheritance,todo
+  tags: oop, beginner, methods, inheritance, todo
   languages: objc
 ---
 
