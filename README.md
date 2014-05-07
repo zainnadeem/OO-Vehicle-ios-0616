@@ -39,7 +39,7 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
       4. Current Direction: 0 (north)
   4. Planes have an additional property called altitude. To summarize:
     1. Top altitude for a plane will be 30,000. Starting altitude is 0.
-    2. Planes can increase/decrease altitude, so we need `increaseAltitude:` and `decreaseAltitude:` methods. Increasing and decreasing altitude will take you to 30,000 and 0 respectively.
+    2. Planes can increase/decrease altitude, so we need `increaseAltitude` and `decreaseAltitude` methods. Increasing and decreasing altitude will take you to 30,000 and 0 respectively.
     3. Weight is 255,000
     4. Top speed is 614
     5. Current speed is 0 to begin with
