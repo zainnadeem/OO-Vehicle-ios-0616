@@ -10,14 +10,7 @@ OO-Vehicle
 
 - Working with classes and objects
 - Introducing the concept of inheritance
-
-###Classes
-
-Classes are blueprints for objects. Classes contain data and behavior in the form of properties and methods.  
-
-###Objects
-
-Objects are instances of classes. Everything in Objective-C is represented as an object. An object can receive a message by way of calling a method.  
+- Introducing `NSArray`
 
 ###Inheritance
 
@@ -26,24 +19,37 @@ A class can inherit properties and methods (data and behaviors) of another class
 
 ##Instructions
 
-Let's model some vehicles
+Let's model some vehicles. All numbers will be ```CGFloat``` values.
 
   1. All vehicles have some characteristics
     1. Weight
     2. Top Speed
     3. Current Speed
-    4. Current Direction (North, south, east, west)
-    5. Distance from starting point
+    4. Current Direction (north => 0, east => 90,south => 180, west => 270)
   2. All vehicles can do some things:
-    1. increase speed
-    2. brake
-    3. Turn left
-    4. Turn right
-    5. Move forward
-    6. Move backward
-  3. There are special vehicles called cars that move around in their own way. For example, they have their own acceleration speed/braking speed per increase speed method call/brake method call.
-  4. Planes have an additional property called altitude. Also they can't reverse! They can increase altitude or decrease altitude. They also have their own rate of acceleration/braking
-  5. Race cars are much faster then regular cars. They also have a list of sponsors.
+    1. increase speed (this should change the vehicle's current speed to it's top speed)
+    2. brake (this should change the vehicle's current speed to a speed of 0)
+    3. Turn left (turns the vehicle -90 degrees, i.e. one quarter turn)
+    4. Turn right (turns the vehicle 90 degrees)
+  3. There are special vehicles called cars that move around in their own way.
+    1. A new car object starts with these Vehicle characteristics:
+      1. Weight: 1270
+      2. Top Speed: 88
+      3. Current Speed: 0
+      4. Current Direction: 0 (north)
+  4. Planes have an additional property called altitude. To summarize:
+    1. Top altitude for a plane will be 30,000. Starting altitude is 0.
+    2. Planes can increase/decrease altitude, so we need `increaseAltitude:` and `decreaseAltitude:` methods. Increasing and decreasing altitude will take you to 30,000 and 0 respectively.
+    3. Weight is 255,000
+    4. Top speed is 614
+    5. Current speed is 0 to begin with
+    6. Current direction starts at 0 (north)
+  5. RaceCars are much faster then regular cars. They also have a list of sponsors.
+    1. Race cars also weight 1270
+    2. Race cars have a top speed of 615
+    3. Current Speed: 0
+    4. Current Direction: 0 (north)
+    5. Race cars have a list of sponsors. This will be an `NSArray` with 3 sponsors in it: `@"KFC"`, `@"Taco Bell"`, and `@"Pizza Hut"`
   6. Think about how some of these properties should be set as default...make sure they are set as such on `init`.
   7. Show that all your methods work in the `didFinishLaunchingWithOptions` method of your app delegate
 
@@ -57,13 +63,15 @@ Let's model some vehicles
 - Name the Class, and select the subclass (for now, all classes will be subclass of NSObject)
 - Select create from the next screen
 
-###Instantiating an Object
-
+###Instantiating an Array
 ```objc
-NSObject *newObject = [[NSObject alloc] init];
+NSArray *newArray = @[@"KFC", @"Taco Bell", @"Pizza Hut"];
+```
+-or-
+```objc
+NSArray *newArray = [[NSArray alloc] initWithObjects: @"KFC", @"Taco Bell", @"Pizza Hut", nil];
 ```
 
 ##Links
 
 - [Writing a Custom Class](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOS/WritingaCustomClass.html)
-- [NSString Documentation](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/Strings/Articles/CreatingStrings.html#//apple_ref/doc/uid/20000148-CJBCJHHI)
