@@ -10,4 +10,34 @@
 
 @implementation FISVehicle
 
+-(void)increaseSpeed
+{
+    
+}
+
+-(void)brake
+{
+    
+}
+
+-(void)turnLeft
+{
+    
+}
+
+-(void)turnRight
+{
+    
+}
+
+-(void)moveForward
+{
+    
+}
+
+-(void)moveBackward
+{
+    
+}
+
 @end
