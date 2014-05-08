@@ -16,7 +16,7 @@
     if (self) {
         self.weight = 1270.0f;
         self.topSpeed = 615.0f;
-        self.sponsors = @[@"KFC", @"Taco Bell",@"Pizza Hut"];
+        _sponsors = @[@"KFC", @"Taco Bell",@"Pizza Hut"];
     }
     return self;
 }

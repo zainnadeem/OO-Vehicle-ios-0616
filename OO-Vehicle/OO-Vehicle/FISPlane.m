@@ -17,8 +17,8 @@
         
         self.weight = 255000.0f;
         self.topSpeed = 614.0f;
-        self.currentAltitude = 0.0f;
-        self.topAltitude = 30000;
+        _currentAltitude = 0.0f;
+        _topAltitude = 30000;
     }
     return self;
 }

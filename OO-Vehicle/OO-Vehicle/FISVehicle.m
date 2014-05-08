@@ -14,10 +14,10 @@
 {
     self = [super init];
     if (self) {
-        self.weight = 0.0f;
-        self.topSpeed = 0.0f;
-        self.currentSpeed = 0.0f;
-        self.currentDirection = 0.0f;
+        _weight = 0.0f;
+        _topSpeed = 0.0f;
+        _currentSpeed = 0.0f;
+        _currentDirection = 0.0f;
     }
     return self;
 }
