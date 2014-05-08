@@ -53,6 +53,38 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
   6. Think about how some of these properties should be set as default...make sure they are set as such on `init`.
   7. Show that all your methods work in the `didFinishLaunchingWithOptions` method of your app delegate
 
+###Recap:
+####An FISVehicle should have these properties...
++ @property (nonatomic) CGFloat weight;
++ @property (nonatomic) CGFloat topSpeed;
++ @property (nonatomic) CGFloat currentSpeed;
++ @property (nonatomic) CGFloat currentDirection;
+
+####and these methods
++ -(void)increaseSpeed;
++ -(void)brake;
++ -(void)turnLeft;
++ -(void)turnRight;
+---
+####An FISCar should have these *additional* properties...
+
+####And these *additional* methods
+---
+####A FISPlane should have these *additional* properties...
+- @property (nonatomic) CGFloat currentAltitude;
+- @property (nonatomic) CGFloat topAltitude;
+
+####And these *additional* methods
+- -(void)increaseAltitude;
+- -(void)decreaseAltitude;
+---
+####An FISRaceCar should have these *additional* properties...
+- @property (copy, nonatomic) NSArray *sponsors;
+
+####And these *additional* methods
+---
+
+**additional* here means in addition to those properties and methods inherited from the superclass, in this case FISVehicle
 ##Examples
 
 ###Creating a class
