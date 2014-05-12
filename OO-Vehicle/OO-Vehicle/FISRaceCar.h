@@ -10,6 +10,6 @@
 
 @interface FISRaceCar : FISVehicle
 
-@property (copy, nonatomic) NSArray *sponsors;
+@property (strong, nonatomic) NSArray *sponsors;
 
 @end
