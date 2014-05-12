@@ -12,12 +12,11 @@
 
 - (instancetype)init
 {
-    self = [super init];
-    if (self) {
-        self.weight = 1270.0f;
-        self.topSpeed = 88.0f;
-    }
+    self = [super initWithWeight:1270.0f topSpeed:88.0f currentSpeed:0.0f currentDirection:0.0f];
+
     return self;
 }
+
+
 
 @end

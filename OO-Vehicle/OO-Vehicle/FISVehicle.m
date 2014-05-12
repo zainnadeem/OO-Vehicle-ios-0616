@@ -10,14 +10,14 @@
 
 @implementation FISVehicle
 
-- (instancetype)init
+-(instancetype)initWithWeight:(float)weight topSpeed:(float)topSpeed currentSpeed:(float)currentSpeed currentDirection:(float)currentDirection
 {
     self = [super init];
     if (self) {
-        _weight = 0.0f;
-        _topSpeed = 0.0f;
-        _currentSpeed = 0.0f;
-        _currentDirection = 0.0f;
+        _weight = weight;
+        _topSpeed = topSpeed;
+        _currentSpeed = currentSpeed;
+        _currentDirection = currentDirection;
     }
     return self;
 }

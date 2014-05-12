@@ -12,10 +12,7 @@
 
 - (instancetype)init
 {
-    self = [super init];
-    if (self) {
-        self.weight = 1270.0f;
-        self.topSpeed = 615.0f;
+    if (self = [super initWithWeight:1270.0f topSpeed:615.0f currentSpeed:0.0f currentDirection:0.0f]) {
         _sponsors = @[@"KFC", @"Taco Bell",@"Pizza Hut"];
     }
     return self;
