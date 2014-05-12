@@ -65,6 +65,7 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
 + -(void)brake;
 + -(void)turnLeft;
 + -(void)turnRight;
+
 ---
 ####An FISCar should have these *additional* properties...
 
@@ -77,6 +78,7 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
 ####And these *additional* methods
 - -(void)increaseAltitude;
 - -(void)decreaseAltitude;
+
 ---
 ####An FISRaceCar should have these *additional* properties...
 - @property (copy, nonatomic) NSArray *sponsors;
