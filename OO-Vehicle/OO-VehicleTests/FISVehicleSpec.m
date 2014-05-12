@@ -18,7 +18,7 @@ describe(@"FISVehicle", ^{
     __block FISVehicle *vehicle;
     
     beforeEach(^{
-        vehicle = [[FISVehicle alloc] init];
+        vehicle = [[FISVehicle alloc] initWithWeight:0.0f topSpeed:0.0f currentSpeed:0.0f currentDirection:0.0f];
     });
     
 //    properties
