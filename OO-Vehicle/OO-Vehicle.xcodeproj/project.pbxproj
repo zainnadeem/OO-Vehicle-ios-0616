@@ -162,10 +162,10 @@
 			isa = PBXGroup;
 			children = (
 				725C3262191AC1450050AE4C /* FISRaceCarSpec.m */,
-				72786A9B1911A44B000E93A3 /* Supporting Files */,
 				72723B0F1917158900D79F15 /* FISVehicleSpec.m */,
 				725C325D191AAF1E0050AE4C /* FISCarSpec.m */,
 				727FB108191A74FA00D60E89 /* FISPlaneSpec.m */,
+				72786A9B1911A44B000E93A3 /* Supporting Files */,
 			);
 			path = "OO-VehicleTests";
 			sourceTree = "<group>";
