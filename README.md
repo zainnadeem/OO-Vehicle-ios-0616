@@ -67,10 +67,6 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
 + -(void)turnRight;
 
 ---
-####An FISCar should have these *additional* properties...
-
-####And these *additional* methods
----
 ####A FISPlane should have these *additional* properties...
 - @property (nonatomic) CGFloat currentAltitude;
 - @property (nonatomic) CGFloat topAltitude;
@@ -83,7 +79,6 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
 ####An FISRaceCar should have these *additional* properties...
 - @property (copy, nonatomic) NSArray *sponsors;
 
-####And these *additional* methods
 ---
 
 **additional* here means in addition to those properties and methods inherited from the superclass, in this case FISVehicle
