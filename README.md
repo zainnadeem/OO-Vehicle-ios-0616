@@ -93,13 +93,46 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
 - Select create from the next screen
 
 ###Instantiating an Array
+
 ```objc
 NSArray *newArray = @[@"KFC", @"Taco Bell", @"Pizza Hut"];
 ```
 -or-
+
 ```objc
 NSArray *newArray = [[NSArray alloc] initWithObjects: @"KFC", @"Taco Bell", @"Pizza Hut", nil];
 ```
+##Hints
+Use the designated initializers below for the specific classes. Don't forget to
+call `[super init]` or `[super initWith...]` before you set your properties 
+in your designated initializers!
+
+- FISVehicle:
+
+    ```objc
+      -(instancetype)initWithWeight:(float)weight topSpeed:(float)topSpeed currentSpeed:(float)currentSpeed currentDirection:(float)currentDirection
+    ```
+- FISCar (even bigger hint... we're still going to set our car characteristics
+  in this init method even though it doesn't take any parameters. we're also
+  going to want to take advantage of our superclass's designated initializer in
+  our init mithod):
+
+    ```objc
+      - (instancetype)init
+    ```
+- FISRaceCar (see the 'even bigger hint' for FISCar, same deal here)
+
+    ```objc
+      - (instancetype)init
+    ```
+- FISPlane (see the 'even bigger hint' for FISCar, same deal here)
+
+    ```objc
+      - (instancetype)init
+    ```
+
+
+    
 
 ##Links
 
