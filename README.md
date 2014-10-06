@@ -77,7 +77,7 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
 
 ---
 ####An FISRaceCar should have these *additional* properties...
-- @property (copy, nonatomic) NSArray *sponsors;
+- @property (strong, nonatomic) NSArray *sponsors;
 
 ---
 
