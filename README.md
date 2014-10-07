@@ -65,6 +65,8 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
 + -(void)brake;
 + -(void)turnLeft;
 + -(void)turnRight;
++ -(instancetype)initWithWeight:(float)weight topSpeed:(float)topSpeed
+  currentSpeed:(float)currentSpeed currentDirection:(float)currentDirection;
 
 ---
 ####A FISPlane should have these *additional* properties...
