@@ -65,8 +65,8 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
 + -(void)brake;
 + -(void)turnLeft;
 + -(void)turnRight;
-+ -(instancetype)initWithWeight:(float)weight topSpeed:(float)topSpeed
-  currentSpeed:(float)currentSpeed currentDirection:(float)currentDirection;
++ -(instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed
+  currentSpeed:(CGFloat)currentSpeed currentDirection:(CGFloat)currentDirection;
 
 ---
 ####A FISPlane should have these *additional* properties...
@@ -112,7 +112,7 @@ in your designated initializers!
 - FISVehicle:
 
     ```objc
-      -(instancetype)initWithWeight:(float)weight topSpeed:(float)topSpeed currentSpeed:(float)currentSpeed currentDirection:(float)currentDirection
+      -(instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed currentSpeed:(CGFloat)currentSpeed currentDirection:(CGFloat)currentDirection
     ```
 - FISCar (even bigger hint... we're still going to set our car characteristics
   in this init method even though it doesn't take any parameters. we're also
