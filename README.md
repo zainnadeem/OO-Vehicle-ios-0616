@@ -1,7 +1,4 @@
----
-  tags: oop, beginner, methods, inheritance, todo
-  languages: objc
----
+
 
 OO-Vehicle
 ======
@@ -68,16 +65,7 @@ Let's model some vehicles. All numbers will be ```CGFloat``` values.
 + -(instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed
   currentSpeed:(CGFloat)currentSpeed currentDirection:(CGFloat)currentDirection;
 
----
-####A FISPlane should have these *additional* properties...
-- @property (nonatomic) CGFloat currentAltitude;
-- @property (nonatomic) CGFloat topAltitude;
 
-####And these *additional* methods
-- -(void)increaseAltitude;
-- -(void)decreaseAltitude;
-
----
 ####An FISRaceCar should have these *additional* properties...
 - @property (strong, nonatomic) NSArray *sponsors;
 
