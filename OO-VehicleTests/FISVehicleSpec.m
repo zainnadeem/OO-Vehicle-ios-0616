@@ -35,6 +35,33 @@ describe(@"FISVehicle", ^{
         expect([vehicle currentSpeed]).to.equal(0.0f);
     });
     
+    describe(@"initWithWeight:topSpeed", ^{
+        __block FISVehicle *aTestVehicle;
+        __block CGFloat testWeight;
+        __block CGFloat testSpeed;
+        
+        beforeAll(^{
+            testWeight = 1000;
+            testSpeed = 7777;
+            aTestVehicle = [[FISVehicle alloc] initWithWeight: testWeight topSpeed:testSpeed];
+        });
+        
+        it(@"sets weight appropriately", ^{
+            expect(aTestVehicle.weight).to.equal(testWeight);
+        });
+
+        it(@"sets topSpeed appropriately", ^{
+            expect(aTestVehicle.topSpeed).to.equal(testSpeed);
+        });
+        
+        it(@"defaults currentSpeed to 0", ^{
+            expect(aTestVehicle.currentSpeed).to.equal(0);
+        });
+
+        it(@"defaults currentDirection to 0", ^{
+            expect(aTestVehicle.currentDirection).to.equal(0);
+        });
+    });
     
     describe(@"turnLeft", ^{
         it(@"turns -90 degrees", ^{

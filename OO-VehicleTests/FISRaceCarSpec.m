@@ -37,6 +37,14 @@ describe(@"FISRaceCar", ^{
             expect(raceCar.cylinders).to.equal(8);
         });
         
+        it(@"current speed to 0",^{
+            expect(raceCar.currentSpeed).to.equal(0.0f);
+        });
+        
+        it(@"current direction to 0 (north)",^{
+            expect(raceCar.currentDirection).to.equal(0.0f);
+        });
+        
         it(@"sponors to KFC, Taco Bell, Pizza Hut",^{
             expect(raceCar.sponsors).to.equal(@[@"KFC", @"Taco Bell", @"Pizza Hut"]);
         });
