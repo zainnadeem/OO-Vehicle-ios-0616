@@ -12,8 +12,9 @@
 
 - (instancetype)init
 {
-    if (self = [super initWithWeight:1270.0f topSpeed:615.0f currentSpeed:0.0f currentDirection:0.0f]) {
-        _sponsors = @[@"KFC", @"Taco Bell",@"Pizza Hut"];
+    self = [super initWithWeight:1270.0f topSpeed:615.0f cylinders:8.0f isAutomatic:NO];
+    if (self) {
+        _sponsors = @[@"KFC", @"Taco Bell", @"Pizza Hut"];
     }
     return self;
 }

@@ -12,7 +12,7 @@
 
 - (instancetype)init
 {
-    self = [super initWithWeight:255000.0f topSpeed:614.0f currentSpeed:0.0f currentDirection:0.0f];
+    self = [super initWithWeight:255000.0f topSpeed:614.0f];
     if (self) {
         _currentAltitude = 0.0f;
         _topAltitude = 30000;
