@@ -70,7 +70,7 @@ describe(@"FISVehicle", ^{
         });
         
         it(@"works -360 degrees", ^{
-            for(int x = 0; x < 4; x++)
+            for(NSInteger x = 0; x < 4; x++)
            {
                [vehicle turnLeft];
            }
@@ -86,7 +86,7 @@ describe(@"FISVehicle", ^{
         });
         
         it(@"works +360 degrees", ^{
-            for(int x = 0; x < 4; x++)
+            for(NSInteger x = 0; x < 4; x++)
             {
                 [vehicle turnRight];
             }

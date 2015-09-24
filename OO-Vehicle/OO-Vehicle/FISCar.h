@@ -15,6 +15,6 @@
 @property (nonatomic) CGFloat cylinders;
 
 
--(instancetype)initWithWeight:(CGFloat) weight topSpeed:(CGFloat)topSpeed cylinders:(CGFloat)cylinderAmount isAutomatic:(BOOL)automatic;
+-(instancetype)initWithWeight:(CGFloat) weight topSpeed:(CGFloat)topSpeed cylinders:(CGFloat)cylinders isAutomatic:(BOOL)automatic;
 
 @end

@@ -15,12 +15,12 @@
     return [self initWithWeight:1270.0f topSpeed:88.0f cylinders:4.0f isAutomatic:YES];
 }
 
--(instancetype)initWithWeight:(CGFloat) weight topSpeed:(CGFloat)topSpeed cylinders:(CGFloat)cylinderAmount isAutomatic:(BOOL)automatic
+-(instancetype)initWithWeight:(CGFloat) weight topSpeed:(CGFloat)topSpeed cylinders:(CGFloat)cylinders isAutomatic:(BOOL)automatic
 {
     self = [super initWithWeight:weight topSpeed:topSpeed];
     if (self) {
         _isAutomatic = automatic;
-        _cylinders = cylinderAmount;
+        _cylinders = cylinders;
     }
     return self;
 }

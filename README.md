@@ -6,10 +6,10 @@
 OO-Vehicle
 ======
 
-##Goals
+##Objectives
 
-- Get more familiar with classes and objects
-- Gain a working understanding of inheritance
+1. Get more familiar with classes and objects
+2. Gain a working understanding of inheritance
 
 ###Inheritance
 
@@ -44,7 +44,7 @@ Let's make some classes to represent different vehicles. We'll start by making a
        - *You can choose this when making your new "Cocoa Touch Class" in XCode (see "Subclass of:" below "Class:").*
     - Now a car already has all the properties of a vehicle! It also needs:
        - `isAutomatic` - a `BOOL` property for telling whether a car is automatic (`YES`) or stick (`NO`).
-       - `milesPerGallon` (*yes every vehicle technically has this IRL, but its of particular interest for cars*)
+       - `milesPerGallon` (*yes most vehicles technically have this IRL, but its of particular interest for cars*)
        - `cylinders` - valid values are `4`, `6` and `8`.
     - A new car object starts with these property values:
       - `weight`: 1270
