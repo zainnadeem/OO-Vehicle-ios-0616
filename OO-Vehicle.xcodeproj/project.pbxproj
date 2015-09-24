@@ -102,6 +102,7 @@
 			children = (
 				72786A811911A44B000E93A3 /* OO-Vehicle */,
 				72786A9A1911A44B000E93A3 /* OO-VehicleTests */,
+				72786A9B1911A44B000E93A3 /* Supporting Files */,
 				72786A7A1911A44B000E93A3 /* Frameworks */,
 				72786A791911A44B000E93A3 /* Products */,
 				CCBDA732B6FEA25A1340236E /* Pods */,
@@ -178,6 +179,7 @@
 				72786A9D1911A44B000E93A3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			path = "OO-VehicleTests";
 			sourceTree = "<group>";
 		};
 		CCBDA732B6FEA25A1340236E /* Pods */ = {
