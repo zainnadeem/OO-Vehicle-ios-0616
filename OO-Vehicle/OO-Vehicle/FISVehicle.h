@@ -15,7 +15,7 @@
 @property (nonatomic) CGFloat currentSpeed;
 @property (nonatomic) CGFloat currentDirection;
 
--(instancetype)initWithWeight:(float)weight topSpeed:(float)topSpeed currentSpeed:(float)currentSpeed currentDirection:(float)currentDirection;
+-(instancetype)initWithWeight:(CGFloat)weight topSpeed:(CGFloat)topSpeed;
 -(void)increaseSpeed;
 -(void)brake;
 -(void)turnLeft;

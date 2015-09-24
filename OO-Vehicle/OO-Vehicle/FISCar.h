@@ -10,4 +10,11 @@
 
 @interface FISCar : FISVehicle
 
+@property (nonatomic) BOOL isAutomatic;
+@property (nonatomic) CGFloat milesPerGallon;
+@property (nonatomic) CGFloat cylinders;
+
+
+-(instancetype)initWithWeight:(CGFloat) weight topSpeed:(CGFloat)topSpeed cylinders:(CGFloat)cylinderAmount isAutomatic:(BOOL)automatic;
+
 @end

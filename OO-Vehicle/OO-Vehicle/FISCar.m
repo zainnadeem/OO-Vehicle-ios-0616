@@ -12,8 +12,16 @@
 
 - (instancetype)init
 {
-    self = [super initWithWeight:1270.0f topSpeed:88.0f currentSpeed:0.0f currentDirection:0.0f];
+    return [self initWithWeight:1270.0f topSpeed:88.0f cylinders:4.0f isAutomatic:YES];
+}
 
+-(instancetype)initWithWeight:(CGFloat) weight topSpeed:(CGFloat)topSpeed cylinders:(CGFloat)cylinderAmount isAutomatic:(BOOL)automatic
+{
+    self = [super initWithWeight:weight topSpeed:topSpeed];
+    if (self) {
+        _isAutomatic = automatic;
+        _cylinders = cylinderAmount;
+    }
     return self;
 }
 

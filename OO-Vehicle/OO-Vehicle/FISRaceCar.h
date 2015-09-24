@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 FIS. All rights reserved.
 //
 
-#import "FISVehicle.h"
+#import "FISCar.h"
 
-@interface FISRaceCar : FISVehicle
+@interface FISRaceCar : FISCar
 
 @property (strong, nonatomic) NSArray *sponsors;
 
