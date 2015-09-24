@@ -20,29 +20,34 @@ describe(@"FISCar", ^{
         car = [[FISCar alloc] init];
     });
     
-    it(@"is an FISVehicle", ^{
-        expect(car).notTo.beNil();
-        expect(car).to.beInstanceOf([FISCar class]);
-    });  
-    
     it(@"is a subclass of FISVehicle", ^{
-        expect([car class]).to.beSubclassOf([FISVehicle class]);
+        expect(car).to.beKindOf([FISVehicle class]);
     });
     
-    it(@"has a weight of 1270", ^{
-        expect(car.weight).to.equal(1270.0f);
-    });
-    
-    it(@"has a top speed of 88", ^{
-        expect(car.topSpeed).to.equal(88.0f);
-    });
-    
-    it(@"has a current speed of 0",^{
-        expect(car.currentSpeed).to.equal(0.0f);
-    });
-    
-    it(@"has a current direction of 0 (north)",^{
-        expect(car.currentDirection).to.equal(0.0f);
+    describe(@"default init method sets", ^{
+        it(@"weight to 1270", ^{
+            expect(car.weight).to.equal(1270.0f);
+        });
+        
+        it(@"top speed to 88", ^{
+            expect(car.topSpeed).to.equal(88.0f);
+        });
+        
+        it(@"current speed to 0",^{
+            expect(car.currentSpeed).to.equal(0.0f);
+        });
+        
+        it(@"current direction to 0 (north)",^{
+            expect(car.currentDirection).to.equal(0.0f);
+        });
+        
+        it(@"isAutomatic to YES", ^{
+            expect(car.isAutomatic).to.beTruthy;
+        });
+        
+        it(@"cylinders to 4", ^{
+            expect(car.cylinders).to.equal(4.0f);
+        });
     });
 });
 
