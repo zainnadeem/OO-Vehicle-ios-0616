@@ -21,52 +21,46 @@ describe(@"FISPlane", ^{
         plane = [[FISPlane alloc] init];
     });
     
-    it(@"is an FISPlane", ^{
-        expect(plane).toNot.beNil();
-        expect(plane).to.beInstanceOf([FISPlane class]);
-    });
-    
     it(@"is a subclass of FISVehicle", ^{
-        expect([plane class]).to.beSubclassOf([FISVehicle class]);
+        expect(plane).to.beKindOf([FISVehicle class]);
     });
     
-    it(@"has a weight of 255000", ^{
-        expect(plane.weight).to.equal(255000.0f);
-    });
-    
-    it(@"has a top speed of 614", ^{
-        expect(plane.topSpeed).to.equal(614.0f);
-    });
-    
-    it(@"has a current speed of 0",^{
-        expect(plane.currentSpeed).to.equal(0.0f);
-    });
-    
-    it(@"has a current direction of 0 (north)",^{
-        expect(plane.currentDirection).to.equal(0.0f);
-    });
-    
-    it(@"has an current altitude",^{
-        expect(plane).to.respondTo(@selector(currentAltitude));
-        expect(plane).to.respondTo(@selector(setCurrentAltitude:));
-        expect(plane.currentAltitude).to.equal(0.0f);
-    });
-    
-    it(@"has a top altitude",^{
-        expect(plane).to.respondTo(@selector(topAltitude));
-        expect(plane).to.respondTo(@selector(setTopAltitude:));
-        expect(plane.topAltitude).to.equal(30000);
+    describe(@"default init method sets", ^{
+        it(@"weight to 255000", ^{
+            expect(plane.weight).to.equal(255000.0f);
+        });
+        
+        it(@"topSpeed to 614", ^{
+            expect(plane.topSpeed).to.equal(614.0f);
+        });
+        
+        it(@"currentSpeed to 0",^{
+            expect(plane.currentSpeed).to.equal(0.0f);
+        });
+        
+        it(@"currentDirection to 0 (north)",^{
+            expect(plane.currentDirection).to.equal(0.0f);
+        });
+        
+        it(@"currentAltitude to 0",^{
+            expect(plane.currentAltitude).to.equal(0.0f);
+        });
+        
+        it(@"topAltitude to 30000",^{
+            expect(plane.topAltitude).to.equal(30000);
+        });
     });
     
     describe(@"increaseAltitude", ^{
-        it(@"increases altitude to top altitude",^{
+        it(@"changes currentAltitude to topAltitude",^{
             [plane increaseAltitude];
             expect([plane currentAltitude]).to.equal(plane.topAltitude);
         });
     });
     
     describe(@"decreaseAltitude", ^{
-        it(@"decreases altitude to 0",^{
+        it(@"decreases currentAltitude to 0",^{
+            [plane increaseAltitude];
             [plane decreaseAltitude];
             expect([plane currentAltitude]).to.equal(0.0f);
         });
