@@ -32,7 +32,7 @@ Let's make some classes to represent different vehicles. We'll start by making a
     - Current Speed
     - Current Direction (north would be 0, east = 90, south = 180, west = 270)
   2. Now give it methods that all vehicles would have:
-    - `increaseSpeed` (changes the vehicle's `currentSpeed` to it's top speed)
+    - `increaseSpeed` (changes the vehicle's `currentSpeed` to its top speed)
     - `brake` (changes the vehicle's `currentSpeed` to 0)
     - `turnLeft` (turns the vehicle -90 degrees, i.e. one quarter turn)
     - `turnRight` (turns the vehicle +90 degrees)
@@ -76,7 +76,7 @@ Let's make some classes to represent different vehicles. We'll start by making a
        - Top speed: 615
        - Manual transmission (*aka not automatic*) 
        - 8 cylinders
-       - 3 sponsors: `@"KFC"`, `@"Taco Bell"`, and `@"Pizza Hut`
+       - 3 sponsors: `@"KFC"`, `@"Taco Bell"`, and `@"Pizza Hut"`
        - *hint: you may need to create a new initializer for your car class to make this process go smoothly!*
   6. Play around with your new classes and their methods in the `didFinishLaunchingWithOptions` method of your app delegate. Treat it like an informal test of what you just created— you're looking to see that they behave the way you expect them to.
 
