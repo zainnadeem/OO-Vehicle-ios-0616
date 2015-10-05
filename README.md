@@ -13,7 +13,7 @@ OO-Vehicle
 
 ###Inheritance
 
-A class can inherit properties and methods (data and behaviors) of another class. A class that inherits is called a '**subclass**' (or child class), and the class that is inherited *from* is called the '**superclass**'. Say it aloud: a subclass inherits from it's superclass. 
+A class can inherit properties and methods (data and behaviors) of another class. A class that inherits is called a '**subclass**' (or child class), and the class that is inherited *from* is called the '**superclass**'. Say it aloud: a subclass inherits from its superclass. 
 
 A subclass can have its own properties and methods in addition to the inherited ones. This is basically the point of inheritance — we have a class that works, but needs to be specialized for certain tasks. So we *subclass* that object, giving it a new name and modifying/adding to it to suit our needs. 
 
@@ -32,7 +32,7 @@ Let's make some classes to represent different vehicles. We'll start by making a
     - Current Speed
     - Current Direction (north would be 0, east = 90, south = 180, west = 270)
   2. Now give it methods that all vehicles would have:
-    - `increaseSpeed` (changes the vehicle's `currentSpeed` to it's top speed)
+    - `increaseSpeed` (changes the vehicle's `currentSpeed` to its top speed)
     - `brake` (changes the vehicle's `currentSpeed` to 0)
     - `turnLeft` (turns the vehicle -90 degrees, i.e. one quarter turn)
     - `turnRight` (turns the vehicle +90 degrees)
@@ -44,7 +44,7 @@ Let's make some classes to represent different vehicles. We'll start by making a
        - *You can choose this when making your new "Cocoa Touch Class" in XCode (see "Subclass of:" below "Class:").*
     - Now a car already has all the properties of a vehicle! It also needs:
        - `isAutomatic` - a `BOOL` property for telling whether a car is automatic (`YES`) or stick (`NO`).
-       - `milesPerGallon` (*yes most vehicles technically have this IRL, but its of particular interest for cars*)
+       - `milesPerGallon` (*yes most vehicles technically have this IRL, but it's of particular interest for cars*)
        - `cylinders` - valid values are `4`, `6` and `8`.
     - A new car object starts with these property values:
       - `weight`: 1270
@@ -76,7 +76,7 @@ Let's make some classes to represent different vehicles. We'll start by making a
        - Top speed: 615
        - Manual transmission (*aka not automatic*) 
        - 8 cylinders
-       - 3 sponsors: `@"KFC"`, `@"Taco Bell"`, and `@"Pizza Hut`
+       - 3 sponsors: `@"KFC"`, `@"Taco Bell"`, and `@"Pizza Hut"`
        - *hint: you may need to create a new initializer for your car class to make this process go smoothly!*
   6. Play around with your new classes and their methods in the `didFinishLaunchingWithOptions` method of your app delegate. Treat it like an informal test of what you just created— you're looking to see that they behave the way you expect them to.
 
