@@ -13,7 +13,7 @@ OO-Vehicle
 
 ###Inheritance
 
-A class can inherit properties and methods (data and behaviors) of another class. A class that inherits is called a '**subclass**' (or child class), and the class that is inherited *from* is called the '**superclass**'. Say it aloud: a subclass inherits from it's superclass. 
+A class can inherit properties and methods (data and behaviors) of another class. A class that inherits is called a '**subclass**' (or child class), and the class that is inherited *from* is called the '**superclass**'. Say it aloud: a subclass inherits from its superclass. 
 
 A subclass can have its own properties and methods in addition to the inherited ones. This is basically the point of inheritance — we have a class that works, but needs to be specialized for certain tasks. So we *subclass* that object, giving it a new name and modifying/adding to it to suit our needs. 
 
