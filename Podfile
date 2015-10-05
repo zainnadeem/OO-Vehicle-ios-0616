@@ -5,4 +5,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'OO-VehicleTests' do
   pod 'Specta'
   pod 'Expecta'
+  pod 'KIF'
 end
