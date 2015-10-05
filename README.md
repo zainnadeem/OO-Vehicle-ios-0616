@@ -44,7 +44,7 @@ Let's make some classes to represent different vehicles. We'll start by making a
        - *You can choose this when making your new "Cocoa Touch Class" in XCode (see "Subclass of:" below "Class:").*
     - Now a car already has all the properties of a vehicle! It also needs:
        - `isAutomatic` - a `BOOL` property for telling whether a car is automatic (`YES`) or stick (`NO`).
-       - `milesPerGallon` (*yes most vehicles technically have this IRL, but its of particular interest for cars*)
+       - `milesPerGallon` (*yes most vehicles technically have this IRL, but it's of particular interest for cars*)
        - `cylinders` - valid values are `4`, `6` and `8`.
     - A new car object starts with these property values:
       - `weight`: 1270
