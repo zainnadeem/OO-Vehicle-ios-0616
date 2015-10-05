@@ -1,17 +1,11 @@
----
-  tags: oop, beginner, methods, inheritance, todo
-  languages: objc
----
+# OO-Vehicle
 
-OO-Vehicle
-======
-
-##Objectives
+## Objectives
 
 1. Get more familiar with classes and objects
 2. Gain a working understanding of inheritance
 
-###Inheritance
+## Inheritance
 
 A class can inherit properties and methods (data and behaviors) of another class. A class that inherits is called a '**subclass**' (or child class), and the class that is inherited *from* is called the '**superclass**'. Say it aloud: a subclass inherits from it's superclass. 
 
@@ -20,7 +14,7 @@ A subclass can have its own properties and methods in addition to the inherited 
 For example, `NSMutableArray` is a subclass of `NSArray`. Arrays already worked fine, but a different, more specific version of them was needed as well (reason: mutability is useful). So, it was subclassed, and methods like `addObject` and `removeObject` were added. 
 
 
-##Instructions
+## Instructions
 
 Let's make some classes to represent different vehicles. We'll start by making a generic `FISVehicle` class, then *subclass* it to specify different *kinds of* vehicles. This is a common practice for when you want to create a slew of objects that have many of the same properties/methods.
 

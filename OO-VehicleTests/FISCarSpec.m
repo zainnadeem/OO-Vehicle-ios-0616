@@ -1,10 +1,4 @@
-//
 //  FISCarSpec.m
-//  OO-Vehicle
-//
-//  Created by Chris Gonzales on 5/7/14.
-//  Copyright 2014 FIS. All rights reserved.
-//
 
 #import "Specta.h"
 #import "FISCar.h"
