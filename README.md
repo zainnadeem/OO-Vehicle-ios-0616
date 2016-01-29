@@ -81,4 +81,4 @@ Let's make some classes to represent different vehicles. We'll start by making a
   6. Play around with your new classes and their methods in the `didFinishLaunchingWithOptions` method of your app delegate. Treat it like an informal test of what you just created— you're looking to see that they behave the way you expect them to.
 
 **Don't forget to run the provided tests!**
-<a href='https://learn.co/lessons/OO-Vehicle' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/OO-Vehicle' title='OO-Vehicle'>OO-Vehicle</a> on Learn.co and start learning to code for free.</p>
